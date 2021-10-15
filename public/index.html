@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&display=swap" rel="stylesheet">
+    <title>Brews</title>
+  </head>
+  <body>
+    <h1>Locate a Brewery</h1>
+    <input id='city-name' placeholder="Type in the city you want to locate a brewery in"/>
+    </br>
+    <h2>Input your city</h2>
+    </br>
+    <button id="fetch-btn">Locate</button>
+
+    <p id="response-output"></p>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <card class='card-container'>
+      <h3 class='breweryName'></h3>
+      <h4>
+        <ul class='breweryInfo'>
+        </ul>
+      </h4>
+    </card>
+    <script src="./index.js"></script>
+  </body>
+</html>
