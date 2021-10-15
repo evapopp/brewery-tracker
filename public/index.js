@@ -1,13 +1,15 @@
 let i = 0;
-const fetchBtn = document.getElementById('fetch-btn')
-const responseText = document.getElementById('response-output')
+const fetchBtn = document.getElementById('fetch-btn');
+const responseText = document.getElementById('response-output');
 const cardContainerEl = document.querySelector('.card-container');
+const inputContainerEl = document.querySelector('.input-container');
 const breweryEl = document.querySelector('.selectedBrew');
 const brewNameEl = document.querySelector('.breweryName');
 const brewStreetEl = document.querySelector('.breweryStreet');
 const brewNumberEl = document.querySelector('.breweryNumber');
 const brewWebsiteEl = document.querySelector('.breweryWebsite');    
 const enjoyEl = document.querySelector('.enjoy');  
+const selectTextEl = document.querySelector('selectText');
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchBtn.addEventListener('click', async () => {
@@ -32,15 +34,16 @@ function listBreweries(response) {
 
         brewNameList.innerHTML = brewName
         cardContainerEl.append(brewNameList);
+        
 
         brewNameList.addEventListener('click', async (event) => {
             const test = await event;
             cardContainerEl.remove();
-
+            inputContainerEl.remove();
             brewNameEl.innerHTML = brewName;
             brewStreetEl.innerHTML = brewStreet + ' ' + brewCity + ', ' + brewState;
             brewNumberEl.innerHTML = brewNumber;
-            brewWebsiteEl.innerHTML = brewWebsite;
+            brewWebsiteEl.innerHTML = 'Go to their website!';
             brewWebsiteEl.setAttribute('href', `${brewWebsite}`);
             enjoyEl.innerHTML = `Hope you enjoy the brews at ${brewName}!`;
         });

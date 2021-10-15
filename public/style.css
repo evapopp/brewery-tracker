@@ -1,8 +1,9 @@
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Fugaz One', cursive;
     color: white;
-    font-size: 5em;
+    font-size: 6em;
 }
+
 
 body {
     background-image: url("./images/Texture-Wood-Grain.jpg");
@@ -14,14 +15,39 @@ body {
 }
 
 h2 {
+    font-family: 'Open Sans', sans-serif;
     font-size: 3em;
+    margin-top: 1rem;
     margin-bottom: 0;
 }
 
 #city-name {
+    color: white;
     width: 600px;
     height: 60px;
     font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.219) !important;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.479);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid rgb(0, 0, 0);
+  -webkit-text-fill-color:white;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.219) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 #fetch-btn {
@@ -31,4 +57,37 @@ h2 {
     background-color: black;
     color: white;
     font-size: 35px;
+}
+
+.card-container {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.breweryName {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.breweryStreet {
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.breweryNumber {
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.breweryWebsite {
+    font-size: 2.5rem;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.enjoy {
+    font-size: 2rem;
+    margin-top: 5rem;
 }

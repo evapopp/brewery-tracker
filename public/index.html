@@ -13,15 +13,7 @@
     <title>Brews</title>
   </head>
   <body>
-    <h1>Locate a Brewery</h1>
-    <input id='city-name' placeholder="Type in the city you want to locate a brewery in"/>
-    </br>
-    <h2>Input your city</h2>
-    </br>
-    <button id="fetch-btn">Locate</button>
-
-    <p id="response-output"></p>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <h1>The <span id='beer'>Brew</span> for You</h1>
 
     <div class='selectedBrew'>
       <h3 class='breweryName'></h3>
@@ -29,8 +21,21 @@
       <div class='breweryNumber'></div>
       <a class='breweryWebsite'></a>
       <div class='enjoy'></div>
-    </div>    
+    </div> 
+
+    <div class='input-container'>
+      <h2>Input a city you want to locate a brewery in</h2>
+      <input id='city-name' placeholder="Ex: Denver"/>
+      </br>
+      <button id="fetch-btn">Locate</button>
+
+      <p id="response-output"></p>
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <card class='card-container'></card>
+
     <script src="./index.js"></script>
   </body>
 </html>
